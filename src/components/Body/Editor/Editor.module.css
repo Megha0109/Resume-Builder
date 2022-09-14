@@ -1,0 +1,143 @@
+.container{
+    min-width : 550px;
+    min-height : 450px;
+    display: flex;
+    flex-direction: column;
+    gap : 30px;
+    box-shadow: 2px #8a2be2;
+    border: 1px solid;
+    border-color: #8a2be2;
+    border-radius: 1rem;
+    padding-top: 5px;
+    box-shadow: 5px 5px 10px 10px;
+
+}
+
+.header{
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    border-bottom: 2px solid rgba(96, 31, 180, 0.621);
+    
+    
+
+}
+
+.header::-webkit-scrollbar{
+    height: 7px;
+}
+
+.header::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-color: #8a2be2;
+}
+.header .section {
+    padding : 10px;
+    border-bottom: 2px solid transparent;
+    font-weight: 500;
+    font-size: 1rem;
+    white-space: nowrap;
+    cursor: pointer;
+
+}
+
+.header .active{
+    border-bottom: 2px solid blueviolet;
+    color:blueviolet;
+}
+.body{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.detail{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.detail .row{
+    display: flex;
+    gap: 20px;
+
+}
+
+.detail .column{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.detail .row > div{
+    flex: 1;
+}
+.chips{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.chip .new{
+    color: #8a2be2;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+}
+
+.chip{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 4px 8px;
+    background-color: #8a2be2;
+    border-radius:  20px;
+}
+
+
+.chip p{
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: aliceblue;
+}
+
+.chip svg{
+    color: aliceblue;
+    height: 18px;
+    width: 18px;
+    cursor: pointer;
+}
+
+.chips .active{
+    background-color: blueviolet;
+
+}
+
+.body button{
+        width: fit-content;
+        padding: 8px 16px;
+        border-radius: 5px;
+        background-color: rgb(152, 92, 207);
+        color: white;
+        outline:none;
+        border: none;
+        font-weight: 500;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        cursor: pointer;
+        transition: 200ms;
+    }
+
+    .body button:active{
+        transform: translateY(2px);
+
+
+    }
